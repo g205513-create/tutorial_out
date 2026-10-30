@@ -202,3 +202,66 @@ h2{
     filter: grayscale(100%);      
 }  
     
+
+
+@media (max-width: 768px) {
+
+    /* Cabeçalho */
+    header {
+        padding: 16px;
+    }
+
+    header ul {
+        gap: 12px;
+        padding: 10px 14px;
+        font-size: 14px;
+    }
+
+    .logotipo {
+        width: 45px;
+    }
+
+    /* Seção inicial */
+    .section1 h1 {
+        font-size: 28px;
+    }
+
+    .section1 p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .divBotoes {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    /* Títulos */
+    .tituloSecao {
+        font-size: 36px;
+    }
+
+    /* Cards: um por linha */
+    .card {
+        width: 100%;
+    }
+
+    .divCards {
+        margin-bottom: 60px;
+    }
+
+    /* Galeria: 2 colunas e menos espaço nas bordas */
+    .divImagens {
+        padding: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+}
+
+/* Celulares bem pequenos: 1 coluna */
+@media (max-width: 480px) {
+    .divImagens {
+        grid-template-columns: 1fr;
+    }
+}
